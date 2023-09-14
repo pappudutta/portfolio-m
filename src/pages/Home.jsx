@@ -8,6 +8,7 @@ import templateOne from "../assets/asset3.png";
 import templateTwo from "../assets/asset4.jpeg";
 import lumin from "../assets/asset 5.png";
 import nebula from "../assets/asset 6.jpeg";
+import wallpaper from "../assets/asset 19.jpeg";
 import ProjectIcon from "../assets/asset36.svg";
 import templateIcon from "../assets/asset 35.svg";
 import btnIcon from "../assets/asset 33.svg";
@@ -108,7 +109,7 @@ const home = () => {
         </div>
       </div>
       {/* fifth section */}
-      <div className="md:flex w-[100%] lg:gap-4">
+      <div className="md:flex md:w-[100%]">
         <div className="md:w-1/3">
           <OneThirdBox />
         </div>
@@ -117,9 +118,9 @@ const home = () => {
           <BoxHalf
             iCon={ProjectIcon}
             templateName="Project"
-            headingName="Nebula"
-            peraName="Fintech"
-            tempImg={nebula}
+            headingName="Wallpaper"
+            peraName="Design"
+            tempImg={wallpaper}
           />
         </div>
       </div>
