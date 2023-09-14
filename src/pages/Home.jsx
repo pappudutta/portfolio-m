@@ -6,37 +6,46 @@ import { SlEnvolope } from "react-icons/sl";
 import BoxHalf from "../components/BoxHalf";
 import templateOne from "../assets/asset3.png";
 import templateTwo from "../assets/asset4.jpeg";
+import lumin from "../assets/asset 5.png";
+import nebula from "../assets/asset 6.jpeg";
 import ProjectIcon from "../assets/asset36.svg";
 import templateIcon from "../assets/asset 35.svg";
 import btnIcon from "../assets/asset 33.svg";
+import OneThirdBox from "../components/oneThirdBox";
 
 const home = () => {
   return (
     <>
       {/* hero section */}
-      <div className="flex justify-between align-middle px-5 py-5">
-        <div className="flex align-middle">
-          <img className="w-12 rounded-full" src={Profile} alt="" />
+      <div className="flex gap-5 flex-col md:flex-row justify-between align-middle px-5 py-5 items-start">
+        <div className="flex align-middle opacity-80 hover:opacity-100 items-center">
+          <img
+            className="w-12 rounded-full border border-slate-600 p-1"
+            src={Profile}
+            alt=""
+          />
           <div className="px-2">
-            <h2>Mrinal Chakraborty</h2>
-            <p>UX/UI Designer</p>
+            <h2 className="text-sm font-semibold">Mrinal Chakraborty</h2>
+            <p className="text-md font-light ">UX/UI Designer</p>
           </div>
         </div>
-        <div className="flex  align-middle">
+        <div className="flex items-center">
           <CiGlobe />
-          <p className="px-1">NYC, USA • 37.0902° N, 95.7129° W</p>
+          <p className="px-1 text-sm font-thin">
+            NYC, USA • 37.0902° N, 95.7129° W
+          </p>
         </div>
       </div>
-      <div className="">
-        <p>
+      <div className="w-2/3 md:w-2/5 px-5 items-center opacity-60">
+        <p className="text-lg">
           Remote visual & brand designer at Monos Studio. Crafting interfaces
           with sprinkles of <span>Visual Magic</span>
         </p>
-        <div className="flex align-middle py-1">
-          <img src={circle} className="px-1 w-5" alt="" />
-          <p>available for projects</p>
+        <div className="flex gap-1 items-center py-3">
+          <img src={circle} className="w-3" alt="" />
+          <p className="text-sm font-light">Available for projects</p>
         </div>
-        <div className="flex align-middle">
+        <div className="flex align-middle py-4">
           <button className="border border-gray-700 bg-[#29292966] hover:bg-[#292929] px-5 py-2 rounded-full">
             <div className="flex gap-1">
               <img src={btnIcon} className="w-5" alt="" />
@@ -49,7 +58,7 @@ const home = () => {
         </div>
       </div>
       {/* second section */}
-      <div className="lg:flex w-5/10">
+      <div className="md:flex">
         <BoxHalf
           iCon={templateIcon}
           templateName="Template"
@@ -64,6 +73,55 @@ const home = () => {
           peraName="Fintech"
           tempImg={templateTwo}
         />
+      </div>
+      {/* third section */}
+      <div className="md:flex lg:gap-4 w-[100%]">
+        <div className="md:w-1/3">
+          <BoxHalf
+            iCon={templateIcon}
+            templateName="Template"
+            headingName="Lumin"
+            peraName="Portfolio template"
+            tempImg={lumin}
+          />
+        </div>
+        <div className="md:w-1/3">
+          <BoxHalf
+            iCon={ProjectIcon}
+            templateName="Project"
+            headingName="Nebula"
+            peraName="Fintech"
+            tempImg={nebula}
+          />
+        </div>
+        <div className="md:w-1/3">
+          <OneThirdBox />
+        </div>
+      </div>
+      {/* forth section */}
+      <div className="md:flex w-[100%]">
+        <div className="md:w-2/3">
+          <OneThirdBox />
+        </div>
+        <div className="md:w-1/3">
+          <OneThirdBox />
+        </div>
+      </div>
+      {/* fifth section */}
+      <div className="md:flex w-[100%] lg:gap-4">
+        <div className="md:w-1/3">
+          <OneThirdBox />
+        </div>
+
+        <div className="md:w-2/3">
+          <BoxHalf
+            iCon={ProjectIcon}
+            templateName="Project"
+            headingName="Nebula"
+            peraName="Fintech"
+            tempImg={nebula}
+          />
+        </div>
       </div>
     </>
   );

@@ -1,4 +1,4 @@
-import Home from "./pages/Home.jsx";
+import Home from "./pages/Home";
 import bg from "./assets/asset-1.png";
 import "./App.css";
 
@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <div className="container">
-        <Home />
+        <div className="max-w-7xl mx-auto ">
+          <Home />
+        </div>
       </div>
     </>
   );
