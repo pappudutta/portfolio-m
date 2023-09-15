@@ -40,3 +40,8 @@ body .container {
   height: 100%;
   z-index: -1;
 }
+.menu-center {
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
