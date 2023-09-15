@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
 import Profile from "../assets/asset-2.jpeg";
 import circle from "../assets/asset55.svg";
 import { CiGlobe } from "react-icons/ci";
@@ -15,6 +16,18 @@ import btnIcon from "../assets/asset 33.svg";
 import OneThirdBox from "../components/oneThirdBox";
 
 const home = () => {
+  const words = ["fine details.", "microinteractions.", "visual magic."];
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide(prevSlide =>
+        prevSlide === words.length - 1 ? 0 : prevSlide + 1
+      );
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       {/* hero section */}
@@ -37,10 +50,13 @@ const home = () => {
           </p>
         </div>
       </div>
-      <div className="w-2/3 md:w-2/5 px-5 items-center opacity-60">
+      <div className="w-2/3 md:w-2/5 px-5 items-center">
         <p className="text-lg">
-          Remote visual & brand designer at Monos Studio. Crafting interfaces
-          with sprinkles of <span>Visual Magic</span>
+          <span className="opacity-60">
+            Remote visual & brand designer at Monos Studio. Crafting interfaces
+            with sprinkles of{" "}
+          </span>
+          <span className="text-white opacity-90">{words[currentSlide]}</span>
         </p>
         <div className="flex gap-1 items-center py-3">
           <img src={circle} className="w-3" alt="" />
