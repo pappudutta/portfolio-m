@@ -24,7 +24,7 @@ const home = () => {
       setCurrentSlide(prevSlide =>
         prevSlide === words.length - 1 ? 0 : prevSlide + 1
       );
-    }, 3000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
@@ -43,11 +43,18 @@ const home = () => {
             <p className="text-md font-light ">UX/UI Designer</p>
           </div>
         </div>
-        <div className="flex items-center">
-          <CiGlobe />
-          <p className="px-1 text-sm font-thin">
-            NYC, USA • 37.0902° N, 95.7129° W
-          </p>
+        <div className=" items-center">
+          <div className="flex">
+            <CiGlobe />
+            <p className="px-1 text-sm font-thin">
+              NYC, USA • 37.0902° N, 95.7129° W
+            </p>
+          </div>
+          <div className="flex gap-1 items-center py-3">
+            {/* <img src={circle} className="w-3" alt="" /> */}
+            <span className="h-2 w-2 bg-green-500 rounded-full mx-1"></span>
+            <p className="text-md font-light">Open for work.</p>
+          </div>
         </div>
       </div>
       <div className="w-2/3 md:w-2/5 px-5 items-center">
@@ -58,10 +65,7 @@ const home = () => {
           </span>
           <span className="text-white opacity-90">{words[currentSlide]}</span>
         </p>
-        <div className="flex gap-1 items-center py-3">
-          <img src={circle} className="w-3" alt="" />
-          <p className="text-sm font-light">Available for projects</p>
-        </div>
+
         <div className="flex align-middle py-4">
           <button className="border border-gray-700 bg-[#29292966] hover:bg-[#292929] px-5 py-2 rounded-full">
             <div className="flex gap-1">
