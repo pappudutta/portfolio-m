@@ -80,24 +80,28 @@ const home = () => {
       </div>
       {/* second section */}
       <div className="mt-5"></div>
-      <div className="md:flex">
-        <BoxHalf
-          iCon={templateIcon}
-          templateName="Template"
-          headingName="Monos"
-          peraName="Portfolio template"
-          tempImg={templateOne}
-        />
-        <BoxHalf
-          iCon={ProjectIcon}
-          templateName="Project"
-          headingName="Interstellar"
-          peraName="Fintech"
-          tempImg={templateTwo}
-        />
+      <div className="md:flex w-full">
+        <div className="md:w-1/2">
+          <BoxHalf
+            iCon={templateIcon}
+            templateName="Template"
+            headingName="Monos"
+            peraName="Portfolio template"
+            tempImg={templateOne}
+          />
+        </div>
+        <div className="md:w-1/2">
+          <BoxHalf
+            iCon={ProjectIcon}
+            templateName="Project"
+            headingName="Interstellar"
+            peraName="Fintech"
+            tempImg={templateTwo}
+          />
+        </div>
       </div>
       {/* third section */}
-      <div className="md:flex lg:gap-4 w-[100%]">
+      <div className="md:flex">
         <div className="md:w-1/3">
           <BoxHalf
             iCon={templateIcon}
@@ -130,7 +134,7 @@ const home = () => {
         </div>
       </div>
       {/* fifth section */}
-      <div className="md:flex md:w-[100%]">
+      <div className="w-full md:flex mr-2">
         <div className="md:w-1/3">
           <OneThirdBox />
         </div>

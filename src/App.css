@@ -16,6 +16,8 @@ body {
   background-image: url("assets/asset-1.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
   height: 100vh;
   position: relative;
 }
@@ -31,6 +33,7 @@ body .container {
   background-image: url("assets/asset-1.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   filter: blur(10px);
   opacity: 0.3;
   position: absolute;

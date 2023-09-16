@@ -3,7 +3,7 @@ import React from "react";
 const BoxHalf = ({ templateName, headingName, peraName, tempImg, iCon }) => {
   return (
     <>
-      <div className="m-2 relative lg:w-[100%] border border-slate-600 bg-[#343434a7] hover:bg-[#292929c4] rounded-[25px] p-2 opacity-60 hover:opacity-100">
+      <div className="m-2 relative border border-slate-600 bg-[#343434a7] hover:bg-[#292929c4] rounded-[25px] p-2 opacity-60 hover:opacity-100">
         <div className="flex px-3 py-3 align-middle">
           <img src={iCon} className="w-5 text-white " alt="" />
           <p className="text-sm px-1 align-middle">{templateName}</p>
