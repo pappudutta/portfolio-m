@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <>
       {/* menus */}
-      <div className="opacity-1">
+      <div className="">
         <div className="bottom-10 w-full relative items-center flex justify-center">
           {/* submenu */}
           <div
@@ -43,10 +43,10 @@ const Header = () => {
               !submenu ? "hidden" : ""
             } animate-menu fixed bottom-32`}
           >
-            <div className="flex items-center gap-1 box border border-[#292929] p-2 rounded-full backdrop-blur-[2px] bg-[#292929dd] mx-auto">
+            <div className="flex items-center gap-1 box border border-[#57575778] p-2 rounded-full backdrop-blur-[2px] bg-[#292929dd] mx-auto">
               {subNavData.map((item, index) => {
                 return (
-                  <div className="w-10 h-10 flex flex-col justify-center items-center bg-[#151515] hover:bg-[#3e3e3e] rounded-full border border-[#3e3e3e] hover:border-[#3e3e3e] transition ease-in-out delay-100 p-1 mx-auto">
+                  <div className="w-12 h-12 flex flex-col justify-center items-center bg-[#161616] hover:bg-[#494949] rounded-full border border-[#373737] hover:border-[#3e3e3e] transition ease-in-out delay-100 p-1 mx-auto opacity-100">
                     <div className="relative text-lg text-white opacity-50 hover:opacity-70 mx-auto transition-all delay-300">
                       {item.icon}
                     </div>
@@ -57,48 +57,48 @@ const Header = () => {
           </div>
           {/* main menu */}
 
-          <div className="fixed bottom-16 inline-flex gap-1 box border border-[#292929] p-2 rounded-full backdrop-blur-[2px] bg-[#292929dd] mx-auto ">
+          <div className="fixed bottom-14 inline-flex gap-1 box border border-[#57575778] p-2 rounded-full backdrop-blur-[2px] bg-[#292929dd] mx-auto ">
             <div className="">
               <img
-                className="w-10 rounded-full border border-[#383838] hover:border-[#707070] transition ease-in-out delay-100 p-1"
+                className="w-12 rounded-full border border-[#5e5e5ee5] hover:border-[#707070] transition ease-in-out delay-100 p-1"
                 src={Profile}
                 alt=""
               />
             </div>
-            <div className="w-10 flex flex-col items-center bg-[#151515] hover:bg-[#3e3e3e] rounded-full border border-[#3e3e3e] hover:border-[#3e3e3e] transition ease-in-out delay-100 p-1">
+            <div className="w-12 flex flex-col items-center bg-[#151515] hover:bg-[#3e3e3e] rounded-full border border-[#3e3e3e] hover:border-[#3e3e3e] transition ease-in-out delay-100 p-1">
               <img
-                className="w-[21px] mt-1  text-white opacity-100"
+                className="w-[21px] mt-2  text-white opacity-100"
                 src={Projects}
                 alt=""
               />
             </div>
-            <div className="w-10 flex flex-col items-center bg-[#151515] hover:bg-[#3e3e3e] rounded-full border border-[#3e3e3e] hover:border-[#3e3e3e] transition ease-in-out delay-100 p-1">
+            <div className="w-12 flex flex-col items-center bg-[#151515] hover:bg-[#3e3e3e] rounded-full border border-[#3e3e3e] hover:border-[#3e3e3e] transition ease-in-out delay-100 p-1">
               <img
-                className="w-[21px] mt-1  text-white opacity-100"
+                className="w-[21px] mt-2  text-white opacity-100"
                 src={Stack}
                 alt=""
               />
             </div>
-            <div className="w-10 flex flex-col items-center bg-[#151515] hover:bg-[#3e3e3e] rounded-full border border-[#3e3e3e] hover:border-[#3e3e3e] transition ease-in-out delay-100 p-1">
+            <div className="w-12 flex flex-col items-center bg-[#151515] hover:bg-[#3e3e3e] rounded-full border border-[#3e3e3e] hover:border-[#3e3e3e] transition ease-in-out delay-100 p-1">
               <img
-                className="w-[21px] mt-1  text-white opacity-100"
+                className="w-[21px] mt-2  text-white opacity-100"
                 src={Notes}
                 alt=""
               />
             </div>
-            <div className="w-10 flex flex-col items-center bg-[#151515] hover:bg-[#3e3e3e] rounded-full border border-[#3e3e3e] hover:border-[#3e3e3e] transition ease-in-out delay-100 p-1">
+            <div className="w-12 flex flex-col items-center bg-[#151515] hover:bg-[#3e3e3e] rounded-full border border-[#3e3e3e] hover:border-[#3e3e3e] transition ease-in-out delay-100 p-1">
               <img
-                className="w-[21px] mt-1  text-white opacity-100"
+                className="w-[21px] mt-2  text-white opacity-100"
                 src={Misc}
                 alt=""
               />
             </div>
             <div
               onClick={handleSubmenu}
-              className="w-10 flex flex-col items-center bg-[#151515] hover:bg-[#3e3e3e] rounded-full border border-[#3e3e3e] hover:border-[#3e3e3e] transition ease-in-out delay-100 p-1"
+              className="w-12 flex flex-col items-center bg-[#151515] hover:bg-[#3e3e3e] rounded-full border border-[#3e3e3e] hover:border-[#3e3e3e] transition ease-in-out delay-100 p-1"
             >
               <img
-                className="w-[21px] mt-1 text-white opacity-100"
+                className="w-[21px] mt-2 text-white opacity-100"
                 src={More}
                 alt=""
               />

@@ -36,7 +36,7 @@ const home = () => {
       <div className=" flex gap-5 flex-col md:flex-row justify-between align-middle p-5 pt-8">
         <div className="flex align-middle items-center">
           <img
-            className="w-12 rounded-full border border-slate-600 p-1"
+            className="w-12 rounded-full border border-slate-400 hover:border-slate-200 p-1"
             src={Profile}
             alt=""
           />

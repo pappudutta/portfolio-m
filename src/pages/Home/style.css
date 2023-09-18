@@ -14,7 +14,7 @@
   top: 0px;
   height: 20px;
   overflow: hidden;
-  animation: slides ease-in-out 1s;
+  animation: slides ease-in 1s;
   z-index: 1;
 }
 
