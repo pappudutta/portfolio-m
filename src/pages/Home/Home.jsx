@@ -33,16 +33,16 @@ const home = () => {
   return (
     <>
       {/* hero section */}
-      <div className=" flex gap-5 flex-col md:flex-row justify-between align-middle px-5 py-5">
+      <div className=" flex gap-5 flex-col md:flex-row justify-between align-middle p-5 pt-8">
         <div className="flex align-middle items-center">
           <img
             className="w-12 rounded-full border border-slate-600 p-1"
             src={Profile}
             alt=""
           />
-          <div className="px-2">
-            <h2 className="text-sm font-semibold">Mrinal Chakraborty</h2>
-            <p className="text-md font-light ">UX/UI Designer</p>
+          <div className="pl-3">
+            <h2 className="text-sm font-normal">Mrinal Chakraborty</h2>
+            <p className="text-sm font-light opacity-60">UX/UI Designer</p>
           </div>
         </div>
         <div className=" items-center">
@@ -60,7 +60,7 @@ const home = () => {
           </div>
         </div>
       </div>
-      <div className="w-2/3 md:w-2/5 px-5 items-center">
+      <div className="w-[80%] md:w-[50%] lg:w-[40%] xl:[30%] px-5 items-center">
         <p className="text-lg">
           <span className="opacity-60">
             Remote visual & brand designer at Monos Studio. Crafting interfaces
@@ -81,20 +81,20 @@ const home = () => {
         </p>
 
         <div className="flex align-middle py-8">
-          <button className="border border-gray-700 bg-[#29292966] hover:bg-[#292929] px-5 py-2 rounded-full">
+          <button className="border border-[#52525b4a] hover:border-[#52525b4a] bg-[#29292966] hover:bg-[#292929] px-5 py-2 rounded-full">
             <div className="flex gap-1">
               <img src={btnIcon} className="w-5" alt="" />
-              Connect
+              <span className="opacity-80 font-light">Connect</span>
             </div>
           </button>
-          <button className="border border-gray-700 bg-[#29292966] hover:bg-[#292929] px-3 py-3 mx-2 rounded-full">
+          <button className="border border-[#52525b4a] hover:border-[#52525b4a] bg-[#29292966] hover:bg-[#292929] px-3 py-3 mx-2 rounded-full">
             <SlEnvolope />
           </button>
         </div>
       </div>
       {/* second section */}
       <div className="mt-5"></div>
-      <div className="md:flex w-full">
+      <div className="md:flex md:w-full">
         <div className="md:w-1/2">
           <BoxHalf
             iCon={templateIcon}
