@@ -15,6 +15,8 @@ import OneThirdBox from "../../components/oneThirdBox";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
+import "./style.css";
+
 const home = () => {
   const words = ["fine details.", "microinteractions.", "visual magic."];
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -24,7 +26,7 @@ const home = () => {
       setCurrentSlide(prevSlide =>
         prevSlide === words.length - 1 ? 0 : prevSlide + 1
       );
-    }, 2000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -64,7 +66,18 @@ const home = () => {
             Remote visual & brand designer at Monos Studio. Crafting interfaces
             with sprinkles of{" "}
           </span>
-          <span className="text-white opacity-90 ">{words[currentSlide]}</span>
+          <span className="h-[20px] slider-box ">
+            {words.map((word, index) => (
+              <span
+                key={index}
+                className={`slider-word ${
+                  index === currentSlide ? "active" : ""
+                }`}
+              >
+                {word}
+              </span>
+            ))}
+          </span>
         </p>
 
         <div className="flex align-middle py-8">

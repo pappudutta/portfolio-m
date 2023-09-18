@@ -1,0 +1,34 @@
+.slider-box {
+  overflow: hidden;
+}
+.slider-word {
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  opacity: 0;
+}
+.active {
+  position: relative;
+  width: 160px;
+  opacity: 1;
+  top: 0px;
+  height: 20px;
+  overflow: hidden;
+  animation: slides ease-in-out 1s;
+  z-index: 1;
+}
+
+@keyframes slides {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
