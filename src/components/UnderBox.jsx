@@ -4,7 +4,7 @@ const UnderBox = ({ figIcon }) => {
   return (
     <>
       <div className="flex gap-2">
-        <div className="relative  w-[50px] h-[50px] overflow-hidden rounded-xl">
+        <div className="relative w-[50px] h-[50px] rounded-xl">
           <img
             src={figIcon}
             className="inset-0 w-full h-full object-cover"

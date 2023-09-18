@@ -1,0 +1,15 @@
+.animate-menu {
+  position: absolute;
+  bottom: 65px;
+  animation: slideUp ease-in-out 0.4s;
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0.2;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

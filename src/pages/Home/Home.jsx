@@ -33,8 +33,8 @@ const home = () => {
   return (
     <>
       {/* hero section */}
-      <div className="flex gap-5 flex-col md:flex-row justify-between align-middle px-5 py-5 items-start">
-        <div className="flex align-middle opacity-80 hover:opacity-100 items-center">
+      <div className=" flex gap-5 flex-col md:flex-row justify-between align-middle px-5 py-5">
+        <div className="flex align-middle items-center">
           <img
             className="w-12 rounded-full border border-slate-600 p-1"
             src={Profile}
