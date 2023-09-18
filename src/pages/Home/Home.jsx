@@ -52,8 +52,8 @@ const home = () => {
           </div>
           <div className="flex gap-1 items-center py-3">
             {/* <img src={circle} className="w-3" alt="" /> */}
-            <span className="animate-ping absolute h-2 w-2 bg-green-500 rounded-full mx-1"></span>
-            <span className="h-2 w-2 relative bg-green-500 rounded-full mx-1"></span>
+            <span className="animate-ping absolute h-[9px] w-[9px] bg-green-500 rounded-full mx-1"></span>
+            <span className="relative h-[9px] w-[9px] bg-green-500 rounded-full mx-1"></span>
             <p className="text-md font-light">Open for work.</p>
           </div>
         </div>
