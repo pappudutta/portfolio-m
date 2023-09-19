@@ -1,11 +1,12 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const UnderBox = ({ figIcon }) => {
   return (
     <>
       <div className="flex gap-2 items-center cursor-pointer">
         <div className="relative w-[50px] h-[50px] rounded-xl">
-          <img
+          <LazyLoadImage
             src={figIcon}
             className="inset-0 w-full h-full object-cover rounded-[12px]"
             alt=""

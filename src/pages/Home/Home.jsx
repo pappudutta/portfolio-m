@@ -15,6 +15,9 @@ import OneThirdBox from "../../components/oneThirdBox";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
+// react image lazy load
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import "./style.css";
 
 const home = () => {
@@ -36,7 +39,9 @@ const home = () => {
       <div className="flex flex-col gap-5 md:flex-row md:justify-between md:items-start px-5 ">
         <div className="flex">
           <div className="flex gap-2 items-center">
-            <img
+            <LazyLoadImage
+              width={45}
+              height={45}
               className="w-12 rounded-full border border-slate-400 hover:border-slate-200 p-1"
               src={Profile}
               alt=""
@@ -55,7 +60,7 @@ const home = () => {
             </p>
           </div>
           <div className="flex gap-1 items-center py-3">
-            {/* <img src={circle} className="w-3" alt="" /> */}
+            {/* img src={circle} className="w-3" alt="" /> */}
             <span className="animate-ping absolute h-[9px] w-[9px] bg-green-500 rounded-full mx-1"></span>
             <span className="relative h-[9px] w-[9px] bg-green-500 rounded-full mx-1"></span>
             <p className="text-md font-light">Open for work.</p>
@@ -85,7 +90,7 @@ const home = () => {
         <div className="flex align-middle py-8">
           <button className="border border-[#52525b4a] hover:border-[#52525b4a] bg-[#29292966] hover:bg-[#292929] px-5 py-2 rounded-full">
             <div className="flex gap-1">
-              <img src={btnIcon} className="w-5" alt="" />
+              <LazyLoadImage src={btnIcon} className="w-5" alt="" />
               <span className="opacity-80 font-light">Connect</span>
             </div>
           </button>
