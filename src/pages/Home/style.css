@@ -18,7 +18,7 @@
   animation-name: slides;
   animation-duration: 3s;
   animation-iteration-count: 1;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in-out;
   z-index: 1;
 }
 
@@ -27,16 +27,20 @@
     top: -20px;
     opacity: 0;
   }
-  30% {
+  40% {
     top: 0px;
-    opacity: 1;
+    opacity: 0.8;
   }
-  70% {
+  50% {
+    top: 0;
+    opacity: 0.8;
+  }
+  80% {
     top: 0px;
-    opacity: 1;
+    opacity: 0.8;
   }
   100% {
-    top: 10px;
+    top: 18px;
     opacity: 0;
   }
 }
