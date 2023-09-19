@@ -14,15 +14,21 @@
   top: 0px;
   height: 20px;
   overflow: hidden;
-  animation: slides ease-in 1s;
+
+  animation: slides ease-in-out 2s;
   z-index: 1;
 }
 
 @keyframes slides {
   0% {
-    transform: translateY(-30px);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0px);
     opacity: 0;
   }
+
   50% {
     transform: translateY(-20px);
     opacity: 0;

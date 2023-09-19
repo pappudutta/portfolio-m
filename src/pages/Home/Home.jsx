@@ -33,22 +33,24 @@ const home = () => {
   return (
     <>
       {/* hero section */}
-      <div className=" flex gap-5 flex-col md:flex-row justify-between align-middle p-5 pt-8">
-        <div className="flex align-middle items-center">
-          <img
-            className="w-12 rounded-full border border-slate-400 hover:border-slate-200 p-1"
-            src={Profile}
-            alt=""
-          />
-          <div className="pl-3">
-            <h2 className="text-sm font-normal">Mrinal Chakraborty</h2>
-            <p className="text-sm font-light opacity-60">UX/UI Designer</p>
+      <div className="flex flex-col gap-5 md:flex-row md:justify-between md:items-start px-5 ">
+        <div className="flex">
+          <div className="flex gap-2 items-center">
+            <img
+              className="w-12 rounded-full border border-slate-400 hover:border-slate-200 p-1"
+              src={Profile}
+              alt=""
+            />
+            <div>
+              <h2 className="text-sm font-normal">Mrinal Chakraborty</h2>
+              <p className="text-sm font-light opacity-60">UX/UI Designer</p>
+            </div>
           </div>
         </div>
-        <div className=" items-center">
+        <div className="flex flex-col gap-0 justify-center align-middle">
           <div className="flex gap-1 items-center">
             <CiGlobe />
-            <p className="px-1 text-sm font-thin ">
+            <p className="px-1 text-sm font-thin">
               NYC, USA • 37.0902° N, 95.7129° W
             </p>
           </div>
@@ -60,9 +62,9 @@ const home = () => {
           </div>
         </div>
       </div>
-      <div className="w-[80%] md:w-[50%] lg:w-[40%] xl:[30%] px-5 items-center">
+      <div className="w-[80%] md:w-[50%] lg:w-[40%] xl:[30%] px-5 items-center pt-2">
         <p className="text-lg">
-          <span className="opacity-60">
+          <span className="opacity-70">
             Remote visual & brand designer at Monos Studio. Crafting interfaces
             with sprinkles of{" "}
           </span>
