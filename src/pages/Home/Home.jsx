@@ -11,7 +11,7 @@ import wallpaper from "../../assets/asset 19.jpeg";
 import ProjectIcon from "../../assets/asset36.svg";
 import templateIcon from "../../assets/asset 35.svg";
 import btnIcon from "../../assets/asset 33.svg";
-import OneThirdBox from "../../components/oneThirdBox";
+import OneThirdBox from "../../components/Design";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
@@ -19,9 +19,15 @@ import Header from "../../components/Header";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import "./style.css";
+import SocialBox from "../../components/SocialBox";
+// import SocialBox from "../../components/Social";
 
 const home = () => {
-  const words = ["fine details.", "microinteractions.", "visual magic."];
+  const words = [
+    "Lasting impression.",
+    "Positive impact.",
+    "Cherished memories.",
+  ];
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -48,7 +54,9 @@ const home = () => {
             />
             <div>
               <h2 className="text-sm font-normal">Mrinal Chakraborty</h2>
-              <p className="text-sm font-light opacity-60">UX/UI Designer</p>
+              <p className="text-sm font-light opacity-60">
+                UX Designer at LCX
+              </p>
             </div>
           </div>
         </div>
@@ -56,7 +64,7 @@ const home = () => {
           <div className="flex gap-1 items-center">
             <CiGlobe />
             <p className="px-1 text-sm font-thin">
-              NYC, USA • 37.0902° N, 95.7129° W
+              Gurgaon, INDIA • 28.4595° N, 77.0266° E
             </p>
           </div>
           <div className="flex gap-1 items-center py-3">
@@ -70,8 +78,8 @@ const home = () => {
       <div className="w-[80%] md:w-[50%] lg:w-[40%] xl:[30%] px-5 items-center pt-2">
         <p className="text-lg">
           <span className="opacity-70">
-            Remote visual & brand designer at Monos Studio. Crafting interfaces
-            with sprinkles of{" "}
+            UX Designer at Liechtenstein Crypto Exchange. Design experience that
+            leaves{" "}
           </span>
           <span className="h-[20px] slider-box ">
             {words.map((word, index) => (
@@ -94,9 +102,11 @@ const home = () => {
               <span className="opacity-80 font-light">Connect</span>
             </div>
           </button>
-          <button className="border border-[#52525b4a] hover:border-[#52525b4a] bg-[#29292966] hover:bg-[#292929] px-3 py-3 mx-2 rounded-full">
-            <SlEnvolope />
-          </button>
+          <a href="mailto:mrinal@mrinalchakraborty.in">
+            <button className="border border-[#52525b4a] hover:border-[#52525b4a] bg-[#29292966] hover:bg-[#292929] px-3 py-3 mx-2 rounded-full">
+              <SlEnvolope />
+            </button>
+          </a>
         </div>
       </div>
       {/* second section */}
@@ -151,7 +161,7 @@ const home = () => {
           <OneThirdBox />
         </div>
         <div className="md:w-1/3">
-          <OneThirdBox />
+          <SocialBox />
         </div>
       </div>
       {/* fifth section */}
