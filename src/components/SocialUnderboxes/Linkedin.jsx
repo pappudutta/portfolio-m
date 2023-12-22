@@ -14,7 +14,7 @@ const AfterEffects = ({ figIcon }) => {
         </div>
         <div className="w-full pl-2 hover:translate-x-1  duration-300 items-center">
           <h4 className="opacity-80  text-sm">Linkedin</h4>
-          <p className="opacity-60 font-light text-sm">Motion Design</p>
+          <p className="opacity-60 font-light text-sm">@uxmrinal</p>
         </div>
       </div>
       <hr className="my-2 w-[97%] mx-auto opacity-20" />

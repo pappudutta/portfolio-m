@@ -20,6 +20,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import "./style.css";
 import SocialBox from "../../components/SocialBox";
+import ExperienceBox from "../../components/ExperienceBox";
 // import SocialBox from "../../components/Social";
 
 const home = () => {
@@ -167,7 +168,7 @@ const home = () => {
       {/* fifth section */}
       <div className="w-full md:flex mr-2">
         <div className="md:w-1/3">
-          <OneThirdBox />
+          <ExperienceBox />
         </div>
 
         <div className="md:w-2/3">
