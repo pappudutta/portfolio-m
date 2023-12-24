@@ -4,11 +4,11 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const LCX = ({ figIcon }) => {
   return (
     <>
-      <div className="flex gap-2 items-center cursor-pointer">
+      <div className="flex gap-2 items-center cursor-pointer ">
         <div className="relative w-[50px] h-[50px] rounded-xl">
           <LazyLoadImage
             src={figIcon}
-            className="inset-0 w-50% h-50% object-cover rounded-[12px]"
+            className="inset-0 w-50% h-50% pt-2 mx-auto object-cover rounded-[12px]"
             alt=""
           />
         </div>
@@ -19,7 +19,7 @@ const LCX = ({ figIcon }) => {
           </p>
         </div>
       </div>
-      <hr className="my-2 w-[97%] mx-auto opacity-20" />
+      {/* <hr className="my-2 w-[97%] mx-auto opacity-20" /> */}
     </>
   );
 };

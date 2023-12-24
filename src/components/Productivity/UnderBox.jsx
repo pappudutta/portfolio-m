@@ -1,7 +1,7 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const Illustrator = ({ figIcon }) => {
+const UnderBox = ({ figIcon, title, description }) => {
   return (
     <>
       <div className="flex gap-2 items-center cursor-pointer">
@@ -13,8 +13,8 @@ const Illustrator = ({ figIcon }) => {
           />
         </div>
         <div className="w-full pl-2 hover:translate-x-1  duration-300 items-center">
-          <h4 className="opacity-80  text-sm">Instgram</h4>
-          <p className="opacity-60 font-light text-sm">@tharki_designer</p>
+          <h4 className="opacity-80  text-sm">{title}</h4>
+          <p className="opacity-60 font-light text-sm">{description}</p>
         </div>
       </div>
       <hr className="my-2 w-[97%] mx-auto opacity-20" />
@@ -22,4 +22,4 @@ const Illustrator = ({ figIcon }) => {
   );
 };
 
-export default Illustrator;
+export default UnderBox;

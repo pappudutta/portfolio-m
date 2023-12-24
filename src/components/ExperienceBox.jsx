@@ -26,6 +26,7 @@ const ExperienceBox = () => {
           <Freelance figIcon={figma} />
           <LCX figIcon={figma} />
           <Webbicles figIcon={figma} />
+          <Webbicles figIcon={figma} />
         </div>
       </div>
     </>

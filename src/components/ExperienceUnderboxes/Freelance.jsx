@@ -8,7 +8,7 @@ const Freelance = ({ figIcon }) => {
         <div className="relative w-[50px] h-[50px] rounded-xl">
           <LazyLoadImage
             src={figIcon}
-            className="inset-0 w-50% h-50% object-cover "
+            className="inset-0 w-50% h-50% pt-2 mx-auto object-cover "
             alt=""
           />
         </div>
@@ -19,7 +19,7 @@ const Freelance = ({ figIcon }) => {
           </p>
         </div>
       </div>
-      <hr className="my-2 w-[97%] mx-auto opacity-20" />
+      {/* <hr className="my-2 w-[97%] mx-auto opacity-20" /> */}
     </>
   );
 };

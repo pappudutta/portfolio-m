@@ -8,7 +8,7 @@ const Webbicles = ({ figIcon }) => {
         <div className="relative w-[50px] h-[50px]">
           <LazyLoadImage
             src={figIcon}
-            className="inset-0 w-50% h-50% object-cover rounded-[12px]"
+            className="inset-0 w-50% h-50% pt-2 mx-auto object-cover rounded-[12px]"
             alt=""
           />
         </div>
@@ -19,7 +19,7 @@ const Webbicles = ({ figIcon }) => {
           </p>
         </div>
       </div>
-      <hr className="my-2 w-[97%] mx-auto opacity-20" />
+      {/* <hr className="my-2 w-[97%] mx-auto opacity-20" /> */}
     </>
   );
 };

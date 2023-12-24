@@ -21,6 +21,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./style.css";
 import SocialBox from "../../components/SocialBox";
 import ExperienceBox from "../../components/ExperienceBox";
+import Productivity from "../../components/Productivity";
 // import SocialBox from "../../components/Social";
 
 const home = () => {
@@ -159,7 +160,7 @@ const home = () => {
       {/* forth section */}
       <div className="md:flex w-[100%]">
         <div className="md:w-2/3">
-          <OneThirdBox />
+          <Productivity />
         </div>
         <div className="md:w-1/3">
           <SocialBox />
@@ -178,6 +179,62 @@ const home = () => {
             headingName="Wallpaper"
             peraName="Design"
             tempImg={wallpaper}
+          />
+        </div>
+      </div>
+
+      {/* 6TH section */}
+      <div className="md:flex">
+        <div className="md:w-1/3">
+          <BoxHalf
+            iCon={templateIcon}
+            templateName="Location"
+            headingName="Lumin"
+            peraName="Portfolio template"
+            tempImg={lumin}
+          />
+        </div>
+        <div className="md:w-1/3">
+          <BoxHalf
+            iCon={ProjectIcon}
+            templateName="Insta"
+            headingName="Nebula"
+            peraName="Fintech"
+            tempImg={nebula}
+          />
+        </div>
+        <div className="md:w-1/3">
+          <OneThirdBox />
+        </div>
+      </div>
+
+      {/* 6TH section */}
+      <div className="md:flex">
+        <div className="md:w-1/3">
+          <BoxHalf
+            iCon={templateIcon}
+            templateName="Location"
+            headingName="Lumin"
+            peraName="Portfolio template"
+            // tempImg={lumin}
+          />
+        </div>
+        <div className="md:w-1/3">
+          <BoxHalf
+            iCon={ProjectIcon}
+            templateName="Insta"
+            headingName="Nebula"
+            peraName="Fintech"
+            // tempImg={nebula}
+          />
+        </div>
+        <div className="md:w-1/3">
+          <BoxHalf
+            iCon={ProjectIcon}
+            templateName="Insta"
+            headingName="Nebula"
+            peraName="Fintech"
+            // tempImg={nebula}
           />
         </div>
       </div>

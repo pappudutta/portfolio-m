@@ -16,7 +16,7 @@ const OneThirdBox = () => {
             Design
           </p>
         </div>
-        <div className="mt-20 w-[100%] border border-[#3a3a3afd] hover:border-[#52525b86] bg-[#ffffff13] hover:bg-[#ffffff16] rounded-[20px] p-2">
+        <div className="mt-20 w-full border border-[#3a3a3afd] hover:border-[#52525b86] bg-[#ffffff13] hover:bg-[#ffffff16] rounded-[20px] p-2">
           <UnderBox figIcon={figma} />
           <AfterEffects figIcon={figma} />
           <Illustrator figIcon={figma} />
